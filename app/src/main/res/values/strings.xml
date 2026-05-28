@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Analyzer</string>
+    <string name="scanning">Memindai jaringan WiFi…</string>
+    <string name="no_networks">Tidak ada jaringan ditemukan</string>
+    <string name="refresh">Refresh</string>
+    <string name="networks_found">jaringan ditemukan</string>
+    <string name="permission_required">Izin lokasi diperlukan</string>
+    <string name="wifi_disabled">WiFi tidak aktif</string>
+    <string name="search_hint">Cari nama WiFi…</string>
+    <string name="filter_strong_signal">Sinyal Kuat (≥50%)</string>
+    <string name="connected">● Connected</string>
+    <string name="detail_title">Detail Jaringan</string>
+    <string name="signal_strength">Kekuatan Sinyal</string>
+    <string name="security_info">Keamanan</string>
+    <string name="network_info">Informasi Jaringan</string>
+</resources>

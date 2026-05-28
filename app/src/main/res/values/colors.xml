@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Palet warna untuk WiFi Analyzer - Dark Mode Modern
+    Menggunakan Material Design 3 color system
+-->
+<resources>
+    <!-- === PRIMARY COLORS - Material Theme === -->
+    <color name="md_theme_primary">#4FC3F7</color>        <!-- Biru cerah - brand utama -->
+    <color name="md_theme_primary_dark">#0288D1</color>   <!-- Biru gelap -->
+    <color name="md_theme_secondary">#81C784</color>      <!-- Hijau - secondary -->
+    <color name="on_primary">#001F2E</color>              <!-- Teks di atas warna primary -->
+
+    <!-- === BACKGROUND COLORS === -->
+    <color name="bg_primary">#0F1117</color>              <!-- Background utama - hampir hitam -->
+    <color name="bg_secondary">#1A1D27</color>            <!-- Background toolbar/header -->
+    <color name="bg_card">#1E2130</color>                 <!-- Background card item -->
+    <color name="bg_card_elevated">#252839</color>        <!-- Card yang lebih terang -->
+
+    <!-- === TEXT COLORS === -->
+    <color name="text_primary">#E8EAED</color>            <!-- Teks utama - putih terang -->
+    <color name="text_secondary">#9AA0AC</color>          <!-- Teks sekunder - abu-abu -->
+    <color name="text_hint">#5A6070</color>               <!-- Hint text - lebih gelap -->
+
+    <!-- === SIGNAL STRENGTH COLORS === -->
+    <color name="signal_excellent">#4CAF50</color>        <!-- Hijau - sinyal sangat kuat (>=75%) -->
+    <color name="signal_good">#8BC34A</color>             <!-- Hijau muda - sinyal kuat (>=50%) -->
+    <color name="signal_fair">#FFC107</color>             <!-- Kuning - sinyal sedang (>=25%) -->
+    <color name="signal_weak">#F44336</color>             <!-- Merah - sinyal lemah (<25%) -->
+
+    <!-- === SECURITY TYPE COLORS === -->
+    <color name="security_wpa3">#4FC3F7</color>           <!-- Biru - WPA3 (paling aman) -->
+    <color name="security_wpa2">#81C784</color>           <!-- Hijau - WPA2 (aman) -->
+    <color name="security_wpa">#AED581</color>            <!-- Hijau muda - WPA -->
+    <color name="security_wep">#FFB74D</color>            <!-- Oranye - WEP (kurang aman) -->
+    <color name="security_open">#EF5350</color>           <!-- Merah - Open (tidak aman) -->
+    <color name="security_unknown">#9E9E9E</color>        <!-- Abu-abu - Unknown -->
+
+    <!-- === UI ELEMENTS === -->
+    <color name="divider_color">#2A2D3A</color>           <!-- Garis pemisah -->
+    <color name="progress_track">#2A2D3A</color>          <!-- Track progress bar -->
+    <color name="ripple_color">#334FC3F7</color>          <!-- Efek ripple saat klik -->
+    <color name="chip_selected">#1E4FC3F7</color>         <!-- Background chip terseleksi -->
+
+    <!-- Warna untuk mipmap icons launcher (tidak diubah) -->
+    <color name="ic_launcher_background">#0F1117</color>
+    <color name="ic_launcher_foreground">#4FC3F7</color>
+</resources>

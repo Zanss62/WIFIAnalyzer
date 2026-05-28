@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tema aplikasi menggunakan Material Design 3 (Material You)
+    Dark mode modern dengan palet warna biru-hijau
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme (dark mode) -->
+    <style name="Theme.WiFiAnalyzer" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorPrimaryVariant">@color/md_theme_primary_dark</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/on_primary</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/bg_primary</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/bg_secondary</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/bg_secondary</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Material components -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.WiFiAnalyzer.MaterialAlertDialog</item>
+        <item name="chipStyle">@style/Widget.WiFiAnalyzer.Chip</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/Widget.WiFiAnalyzer.Toolbar</item>
+
+        <!-- Edge-to-edge display -->
+        <item name="android:windowEdgeToEdgeEnforced" tools:targetApi="35">false</item>
+    </style>
+
+    <!-- Alert Dialog style -->
+    <style name="ThemeOverlay.WiFiAnalyzer.MaterialAlertDialog"
+        parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:background">@color/bg_card</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.WiFiAnalyzer.Button.Positive</item>
+    </style>
+
+    <style name="Widget.WiFiAnalyzer.Button.Positive"
+        parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/md_theme_primary</item>
+    </style>
+
+    <!-- Chip style -->
+    <style name="Widget.WiFiAnalyzer.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="Widget.WiFiAnalyzer.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/bg_secondary</item>
+        <item name="titleTextColor">@color/text_primary</item>
+    </style>
+
+    <!-- Splash Screen theme -->
+    <style name="Theme.WiFiAnalyzer.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_wifi_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.WiFiAnalyzer</item>
+    </style>
+
+</resources>

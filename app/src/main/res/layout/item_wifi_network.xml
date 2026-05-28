@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout untuk satu item jaringan WiFi di RecyclerView -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardWifi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="4dp"
+    app:cardBackgroundColor="@color/bg_card"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:rippleColor="@color/ripple_color"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Row 1: Ikon sinyal + SSID + Badge Connected + Lock -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Ikon sinyal WiFi (4 level berbeda) -->
+            <ImageView
+                android:id="@+id/ivSignalIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="Kekuatan sinyal"
+                android:src="@drawable/ic_wifi_4"
+                tools:tint="@color/signal_excellent" />
+
+            <!-- SSID -->
+            <TextView
+                android:id="@+id/tvSsid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="MyHomeNetwork_5G" />
+
+            <!-- Badge Connected -->
+            <TextView
+                android:id="@+id/tvConnectedStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_badge_connected"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:text="● Connected"
+                android:textColor="@color/signal_excellent"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Ikon Lock/Unlock -->
+            <ImageView
+                android:id="@+id/ivLockIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="6dp"
+                android:contentDescription="Status keamanan"
+                android:src="@drawable/ic_lock"
+                android:tint="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- Row 2: Progress bar sinyal -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressSignal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="75"
+            app:indicatorColor="@color/signal_excellent"
+            app:trackColor="@color/progress_track"
+            app:trackCornerRadius="3dp"
+            tools:progress="75" />
+
+        <!-- Row 3: Info detail -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Kekuatan sinyal dalam persen -->
+            <TextView
+                android:id="@+id/tvSignalPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/signal_excellent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="85%" />
+
+            <!-- dBm value -->
+            <TextView
+                android:id="@+id/tvSignalDbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                tools:text="-45 dBm" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Ikon badge keamanan -->
+            <ImageView
+                android:id="@+id/badgeSecurity"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="Keamanan"
+                android:src="@drawable/ic_shield" />
+
+            <!-- Tipe keamanan -->
+            <TextView
+                android:id="@+id/tvSecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/security_wpa2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="WPA2" />
+
+            <!-- Separator dot -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="6dp"
+                android:text="·"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <!-- Frekuensi & Channel -->
+            <TextView
+                android:id="@+id/tvFrequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                tools:text="5 GHz · Ch 36" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
